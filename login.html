@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universite offciel Web site</title>
+    <link rel="stylesheet" href="style2.css" type="text/css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a15e0149fc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <nav>
+             <a href="index.html" ><img src="images/logo.png"></a>
+           
+            <div class="nav-link">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="courses.html">course</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                    <li><a href="contact.html">contact</a></li>
+
+
+
+                </ul>
+            </div>
+             
+
+
+        </nav>
+  <div class="container">
+    <div class="form-box">
+            <h1 id="title">sign up </h1>
+            <form>
+                <div class="input-group">
+                     <div class="input-filed" id="namefiled">
+                        <i class="fa-solid fa-user"></i>
+                           <input type="text " placeholder=" Name " required>
+
+
+                     </div>
+
+                     <div class="input-filed">
+                        <i class="fa-solid fa-envelope"></i>
+                           <input type="email " placeholder="your email" required>
+
+
+                     </div>
+
+
+                     <div class="input-filed">
+                        <i class="fa-solid fa-lock"></i>
+                           <input type="password " placeholder="password" required>
+
+
+                     </div>
+                     <p>lost password ? <a href="#">click Here </a></p>
+                       
+
+                     <div class="btn-filed">
+                        <button type="button" id="signupbtn">sign up </button>
+                        <button type="button" id="signinbtn" class="disabel">sign in  </button>
+    
+    
+                    </div>
+
+
+                
+
+
+
+
+
+
+
+                </div>
+               
+
+
+            </form>
+
+
+
+    </div>
+
+
+
+
+  </div>
+
+
+
+<script>
+
+
+let signupbtn = document.getElementById("signupbtn");
+let signinbtn = document.getElementById("signinid");
+let namefiled = document.getElementById("namefield");
+let title = document.getElementById("title");
+
+ signinbtn.onclick = function(){
+   namefiled.style.maxHeight = "0" ;
+   title.innerHTML = "sign in ";
+   signupbtn.classList.add("disable");
+   signinbtn.classList.remove("disable");
+
+ } 
+
+ signupbtn.onclick = function(){
+   namefiled.style.maxHeight = "60px" ;
+   title.innerHTML = "sign up ";
+    signupbtn.classList.remove("disable");
+   signinbtn.classList.add("disable");
+
+ } 
+
+ </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
